@@ -7,16 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Resposta do Exercício 17  </h1>
+    <h1>Resposta do Exercício 19</h1>
     <?php
         if($_SERVER["REQUEST_METHOD"] == 'POST'){
             try{
                 $valor1 = (float) $_POST['valor1'] ?? 0;
-                $valor2 = (float) $_POST['valor2'] ?? 0;
-                $valor3 = (int) $_POST['valor3'] ?? 0;
                 // + - * / % ++ -- **
-                $resultado = ($valor1 * ($valor2 / 100) * $valor3);
-                echo "<p>Juros Simples (R$): $resultado </p>";
+                $resultado = ($valor1 * 24 );
+                $minutos = ($resultado * 60);
+                $segundos = ($minutos * 60);
+
+                echo "<p>Horas: $resultado </p>";
+                echo "<p>Minutos: $minutos</p>";
+                echo "<p>Segundos: $segundos</p>";
             } catch(Exception $e){
                 echo "Erro! ".$e->getMessage();
             }
