@@ -8,7 +8,7 @@
 </head>
 <body class="container">
     <h1>Passar números</h1>
-    <form action="exer6resp.php" method="POST">
+    <form action="exer7resp.php" method="POST">
         <div class="col-12 mb-3">
             <label for="numero" class="form-label">Informe um número:</label>
             <input type="number" class="form-control" name="numero" id="numero"   >

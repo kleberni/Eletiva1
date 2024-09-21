@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selecionar Número</title>
+    <title>Contagem Regressiva</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="container">
-    <h1>Passar números</h1>
-    <form action="exer6resp.php" method="POST">
+    <h1>Contagem Regressiva</h1>
+    <form action="exer8resp.php" method="POST">
         <div class="col-12 mb-3">
             <label for="numero" class="form-label">Informe um número:</label>
             <input type="number" class="form-control" name="numero" id="numero"   >
