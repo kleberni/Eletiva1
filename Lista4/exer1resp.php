@@ -19,7 +19,7 @@
         $palavra = $_POST['palavra'];
         $numeroCaracteres = contarCaracteres($palavra);
 
-        echo "<h2>A palavra '$palavra' tem $numeroCaracteres caracteres.</h2>";
+        echo "A palavra <strong>'$palavra'</strong> tem $numeroCaracteres caracteres.";
     }
     ?>
 

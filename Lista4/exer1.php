@@ -8,7 +8,7 @@
 </head>
 <body class="container">
     <h1>Contar Caracteres</h1>
-    <form action="exer10resp.php" method="POST">
+    <form action="exer1resp.php" method="POST">
         <div class="col-12 mb-3">
             <label for="numero" class="form-label">Informe a palavra:</label>
             <input type="text" class="form-control" name="palavra" id="palavra"   >
