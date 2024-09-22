@@ -10,22 +10,20 @@
     <h1>Verifica Palavras Contidads</h1>
 
     <?php
-        // Função para verificar se a segunda palavra está contida na primeira
         function verificarContido($primeira, $segunda) {
-            return strpos($primeira, $segunda) !== false; // Função interna do PHP strpos()
+            return strpos($primeira, $segunda) !== false;
         }
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $primeira_palavra = $_POST['primeira_palavra'];
             $segunda_palavra = $_POST['segunda_palavra'];
 
-            // Verificando se a segunda palavra está contida na primeira
             $contido = verificarContido($primeira_palavra, $segunda_palavra);
 
             if ($contido) {
-                echo "<div class='mt-3'><h2>A segunda palavra '<b>$segunda_palavra</b>' está contida na primeira palavra '<b>$primeira_palavra</b>'.</h2></div>";
+                echo "A palavra está contida!";
             } else {
-                echo "<div class='mt-3'><h2>A segunda palavra '<b>$segunda_palavra</b>' NÃO está contida na primeira palavra '<b>$primeira_palavra</b>'.</h2></div>";
+                echo "<A palavra <strong>NÃO</strong> está contida!";
             }
         }
         ?>

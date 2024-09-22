@@ -11,11 +11,11 @@
     <form action="exer3resp.php" method="POST">
         <div class="row">
             <div class="col">
-                <label for="primeira_palavra" class="form-label">Primeira palavra:</label>
+                <label for="primeira_palavra" class="form-label">Primeiro texto:</label>
                 <input type="text" class="form-control" id="primeira_palavra" name="primeira_palavra" required>
             </div>
             <div class="col">
-                <label for="segunda_palavra" class="form-label">Segunda palavra:</label>
+                <label for="segunda_palavra" class="form-label">Segunda texto:</label>
                 <input type="text" class="form-control" id="segunda_palavra" name="segunda_palavra" required>
             </div>
         </div>
