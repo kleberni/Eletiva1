@@ -9,27 +9,24 @@
     <table class="table table-hover table-striped">
         <thead>
             <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Descrição</th>
-                <th>Preço</th>
-                <th>Estoque Mínimo</th>
-                <th>Categoria</th>
-                <th>Ações</th>
+                <th>Placa</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano de Fabricação</th>
+                <th>Cor</th>
             </tr>
         </thead>
         <tbody>
             
             <tr>
-                <td>1</td>
-                <td>Tênis</td>
-                <td>Tênis Azul</td>
-                <td>R$20,00</td>
-                <td>10</td>
-                <td>Calçado</td>
+                <td>EVZ5B26</td>
+                <td>HONDA</td>
+                <td>FIT</td>
+                <td>2011</td>
+                <td>PRATA</td>
                 <td>
-                    <a href="editar_produto.php" class="btn btn-warning">Editar</a>
-                    <a href="excluir_produto.php" class="btn btn-danger">Excluir</a>
+                    <a href="editar_veiculo.php" class="btn btn-warning">Editar</a>
+                    <a href="excluir_veiculo.php" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
             

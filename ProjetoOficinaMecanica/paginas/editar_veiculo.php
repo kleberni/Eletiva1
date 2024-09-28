@@ -1,13 +1,13 @@
 <?php 
     require_once 'cabecalho.php'; 
-    require_once 'navbar.php';
+    require_once 'navbar.php'; 
 ?>
 
 <div class="container mt-5">
-    <h2>Cadastro de Veículos</h2>
+    <h2>Editar Veículo</h2>
 
     <form method="post">
-        <div class="mb-3">
+    <div class="mb-3">
             <label for="placa" class="form-label">Placa</label>
             <input type="text" name="placa" id="placa" class="form-control" required>
         </div>
@@ -31,7 +31,7 @@
             <label for="descricao" class="form-label">Observação</label>
             <textarea name="descricao" id="descricao" class="form-control" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Cadastrar Veículo</button>
+        <button type="submit" class="btn btn-primary">Atualizar Veículo</button>
     </form>
 </div>
 
