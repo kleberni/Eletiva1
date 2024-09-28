@@ -4,23 +4,23 @@
 ?>
 
 <div class="container mt-5">
-    <h2>Gerenciamento de Categorias</h2>
-    <a href="nova_categoria.php" class="btn btn-success mb-3">Nova Categoria</a>
+    <h2>Gerenciamento de Serviços</h2>
+    <a href="novo_servico.php" class="btn btn-success mb-3">Novo Serviço</a>
     <table class="table table-hover table-striped">
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Nome</th>
+                <th>Nome do Serviço</th>
                 <th>Ações</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>Categoria 1</td>
+                <td>Serviço 1</td>
                 <td>
-                    <a href="editar_categoria.php" class="btn btn-warning">Editar</a>
-                    <a href="excluir_categoria.php" class="btn btn-danger">Excluir</a>
+                    <a href="editar_servico.php" class="btn btn-warning">Editar</a>
+                    <a href="excluir_servico.php" class="btn btn-danger">Excluir</a>
                 </td>
             </tr>
         </tbody>
