@@ -4,8 +4,8 @@
 ?>
 
 <div class="container mt-5">
-    <h2>Gerenciamento de Produtos</h2>
-    <a href="novo_produto.php" class="btn btn-success mb-3">Novo Produto</a>
+    <h2>Gerenciamento de Veículos</h2>
+    <a href="novo_veiculo.php" class="btn btn-success mb-3">Novo Veículo</a>
     <table class="table table-hover table-striped">
         <thead>
             <tr>
