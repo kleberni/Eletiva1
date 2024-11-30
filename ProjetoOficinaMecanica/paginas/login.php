@@ -1,34 +1,28 @@
-<?php
-require_once('../funcoes/usuarios.php'); // Certifique-se de que o caminho esteja correto
-session_start();
+<?php 
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    try {
-        $email = $_POST['email'] ?? "";
-        $senha = $_POST['senha'] ?? "";
+    require_once('../funcoes/usuarios.php');
 
-        if ($email != "" && $senha != "") {
-            // Verifica as credenciais usando a função login
-            $usuario = login($email, $senha);
-            if ($usuario) {
-                // Define variáveis de sessão
-                $_SESSION['usuario'] = $usuario['nome'];
-                $_SESSION['nivel'] = $usuario['nivel'];
-                $_SESSION['acesso'] = true;
-
-                // Redireciona para o dashboard
-                header("Location: dashboard.php");
-                exit();
-            } else {
-                $erro = "Credenciais inválidas!";
+    session_start();
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        try{
+            $email = $_POST['email'] ?? "";
+            $senha = $_POST['senha'] ?? "";
+            if ($email != "" && $senha != ""){
+                $usuario = login($email, $senha);
+                if ($usuario){
+                    $_SESSION['usuario'] = $usuario['nome'];
+                    $_SESSION['nivel'] = $usuario['nivel'];
+                    $_SESSION['acesso'] = true;
+                    header("Location: dashboard.php");
+                } else {
+                    $erro = "Credenciais inválidas!";
+                }
             }
+        } catch(Exception $e){
+            echo "Erro: ".$e->getMessage();
         }
-    } catch (Exception $e) {
-        echo "Erro: " . $e->getMessage();
     }
-}
-
-require_once 'cabecalho.php';
+    require_once 'cabecalho.php'; 
 ?>
 
 <div class="container mt-5">
@@ -44,7 +38,9 @@ require_once 'cabecalho.php';
         </div>
         <button type="submit" class="btn btn-primary">Entrar</button>
     </form>
-    <?php if (isset($erro)) echo "<p class='text-danger'>$erro</p>"; ?>
+    <?php
+        if(isset($erro)) echo "<p class='text-danger'>$erro</p>";
+    ?>
 </div>
 
 <?php require_once 'rodape.php'; ?>
